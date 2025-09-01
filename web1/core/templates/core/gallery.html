@@ -1,0 +1,14 @@
+{% extends "core/base.html" %}
+{% block title %}Galería - FNAF Fan Site{% endblock %}
+{% block banner %}Galería FNAF{% endblock %}
+{% block content %}
+  <h2>Galería</h2>
+  <div class="row">
+    {% for i in "123456" %}
+      <div class="col-md-4 mb-3">
+        <img src="https://i.imgur.com/ZoZBf9{{ forloop.counter }}.jpg" class="img-fluid rounded shadow" alt="Imagen FNAF {{ forloop.counter }}">
+      </div>
+    {% endfor %}
+  </div>
+  <p class="mt-4">Imágenes representativas del universo FNAF, sus animatrónicos y atmósfera.</p>
+{% endblock %}
