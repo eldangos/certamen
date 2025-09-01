@@ -23,6 +23,6 @@ urlpatterns = [
     path('home/', views.home, name='home'),  # opcional si quieres mantenerla
     path('foro/', views.foro, name='foro'),
     path('quest/', views.quest, name='quest'),
+    path('quest/', views.quest, name='quest'),
     path('gallery/', views.gallery, name='gallery'),
-    path('admin/', admin.site.urls),
 ]

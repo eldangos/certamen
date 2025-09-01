@@ -5,12 +5,13 @@ def home(request):
 
 def foro(request):
     return render(request,"core/foro.html")
+    
+def quest(request):
+    return render(request, "core/quest.html")
 
-def foro(request):
-    return render(request,"core/quest.html")
+def gallery(request):
+    return render(request, "core/gallery.html")
 
-def foro(request):
-    return render(request,"core/gallery.html")
 
 """
 def home(request):
