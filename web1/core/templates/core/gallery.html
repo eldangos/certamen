@@ -1,14 +1,80 @@
 {% extends "core/base.html" %}
-{% block title %}Galería - FNAF Fan Site{% endblock %}
-{% block banner %}Galería FNAF{% endblock %}
+{% block title %}Galería{% endblock %}
+
 {% block content %}
-  <h2>Galería</h2>
-  <div class="row">
-    {% for i in "123456" %}
-      <div class="col-md-4 mb-3">
-        <img src="https://i.imgur.com/ZoZBf9{{ forloop.counter }}.jpg" class="img-fluid rounded shadow" alt="Imagen FNAF {{ forloop.counter }}">
+<section class="container py-5">
+  <h2 class="fnaf-title mb-5">GALERÍA DE PERSONAJES</h2>
+
+  <div class="row g-4">
+
+    <!-- Freddy -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card bg-dark text-center h-100 shadow-sm">
+        <a href="https://freddy-fazbears-pizza.fandom.com/wiki/Freddy_Fazbear/Gallery" target="_blank" rel="noopener">
+          <img
+            class="card-img-top img-fluid"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            alt="Freddy Fazbear"
+            src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/4/4e/FNaF1Freddy.png/revision/latest/scale-to-width-down/500" />
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Freddy Fazbear</h5>
+        </div>
       </div>
-    {% endfor %}
+    </div>
+
+    <!-- Bonnie -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card bg-dark text-center h-100 shadow-sm">
+        <a href="https://freddy-fazbears-pizza.fandom.com/wiki/Bonnie_the_Rabbit/Gallery" target="_blank" rel="noopener">
+          <img
+            class="card-img-top img-fluid"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            alt="Bonnie"
+            src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/f/fd/FNaF1Bonnie.png/revision/latest/scale-to-width-down/500" />
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Bonnie</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chica -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card bg-dark text-center h-100 shadow-sm">
+        <a href="https://freddy-fazbears-pizza.fandom.com/wiki/Chica_the_Chicken/Gallery" target="_blank" rel="noopener">
+          <img
+            class="card-img-top img-fluid"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            alt="Chica"
+            src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/2/2d/FNaF1Chica.png/revision/latest/scale-to-width-down/500" />
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Chica</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Foxy -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card bg-dark text-center h-100 shadow-sm">
+        <a href="https://freddy-fazbears-pizza.fandom.com/wiki/Foxy_the_Pirate/Gallery" target="_blank" rel="noopener">
+          <img
+            class="card-img-top img-fluid"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            alt="Foxy"
+            src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/c/c1/FNaF1Foxy.png/revision/latest/scale-to-width-down/500" />
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Foxy</h5>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <p class="mt-4">Imágenes representativas del universo FNAF, sus animatrónicos y atmósfera.</p>
+</section>
 {% endblock %}
